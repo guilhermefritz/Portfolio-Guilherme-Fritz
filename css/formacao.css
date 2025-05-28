@@ -18,20 +18,19 @@
   display: block;
   width: 130px;
   height: 100px;
-
   position: absolute;
   bottom: -50px;
   left: 20px;
 }
+
 .formacao .subtitulo {
-  color: #f3f0f0;
-  /* ajuste conforme desejado */
-  max-width: 12ch;
-  margin-bottom: 30px;
   font-size: 8rem;
   line-height: 1.2;
-  margin-top: 85px;
-  /* sobe o subtítulo 40px */
+  text-transform: uppercase;
+  word-break: break-word;
+  max-width: 12ch;
+  color: #f3f0f0;
+  margin: 85px 0 30px;
 }
 
 .formacao-texto {
@@ -43,7 +42,7 @@
 }
 
 .formacao-texto strong {
-  color: #016af3;
+  color: #0180f7;
 }
 
 .faculdade-lista {
@@ -55,7 +54,7 @@
 
 .faculdade {
   flex: 1;
-  background: #000000;
+  background: #000;
   padding: 20px;
   border-radius: 4px;
   display: flex;
@@ -110,6 +109,7 @@
   left: -36px;
   top: -4px;
 }
+
 .cursos h3::before {
   background: url("../img/curso-online.jpg") no-repeat center center;
 }
@@ -121,7 +121,7 @@
 }
 
 .formacao-extra span {
-  color: #0653f8;
+  color: #0864ee;
 }
 
 .cursos li {
@@ -129,19 +129,29 @@
   justify-content: space-between;
 }
 
+/* MEDIA QUERY */
 @media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
     gap: 40px;
   }
+
   .formacao .subtitulo {
-    color: #faf7f7;
+    font-size: 8rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    word-break: break-word;
+    max-width: 12ch;
+    color: #f3f0f0;
+    margin: 85px 0 30px;
   }
+
   .formacao-texto {
     font-size: 1.25rem;
-    color: #0408eb;
+    color: #f9f9fd;
   }
+
   .formacao-extra h3::before {
     position: initial;
     margin-bottom: 10px;

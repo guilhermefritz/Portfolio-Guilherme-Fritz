@@ -9,8 +9,14 @@
 }
 
 .experiencia .subtitulo {
-  color: #ffffff; /* Ajuste de cor para contraste no fundo escuro */
-  margin-top: 420px;
+  font-size: 8rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  word-break: break-word;
+  max-width: 12ch;
+  color: #f3f0f0;
+  margin: 85px 0 30px;
+  margin-top: 500px;
 }
 
 .experiencia-texto {
@@ -61,6 +67,7 @@
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
+  color: #0864ee;
 }
 
 .empresa-texto {
@@ -91,6 +98,7 @@
   }
   .experiencia .subtitulo {
     color: #ffffff; /* Cor ajustada para o fundo escuro */
+    margin-top: 160px;
   }
   .experiencia-texto {
     font-size: 1.25rem;
@@ -100,11 +108,31 @@
     order: 1;
     width: initial;
     text-align: left;
+    color: #000;
   }
 }
 
 @media (max-width: 400px) {
   .empresa {
     grid-template-columns: 1fr;
+  }
+}
+.experiencia a {
+  color: black; /* deixa o link preto */
+  /* remove sublinhado, se quiser */
+}
+
+/* Se quiser efeito ao passar o mouse */
+.experiencia a:hover {
+  color: #333333; /* um preto mais claro, ou qualquer cor que preferir */
+  /* opcional */
+}
+@media (max-width: 800px) {
+  .experiencia {
+    display: flex;
+    flex-direction: column;
+  }
+  .experiencia .experiencia-texto {
+    order: -1;
   }
 }
