@@ -22,7 +22,7 @@
   display: block;
   width: 80px;
   height: 8px;
-  background: #222; /* detalhe escuro, substitui o SVG verde */
+  background: #222;
   position: absolute;
   top: -20px;
   left: 0;
@@ -39,11 +39,16 @@
 .introducao img {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  max-width: 450px;
 }
+
+/* ===== RESPONSIVIDADE ===== */
 
 @media (max-width: 1000px) {
   .header-menu a {
-    background-color: #0864ee; /* mesma cor */
+    background-color: #0864ee;
     color: #f9f9fa;
   }
 
@@ -55,30 +60,53 @@
 
 @media (max-width: 800px) {
   .introducao {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .introducao img {
+    margin: 0 auto;
+    display: block;
+    max-width: 300px;
+  }
+
+  .introducao h1 {
+    font-size: 2.4rem;
+  }
+
+  .introducao h1::before {
+    display: none;
+  }
+
+  .introducao p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+  }
+}
+
+/* ===== Corrigido: imagem aparece no mobile ===== */
+@media (max-width: 400px) {
+  .introducao {
+    padding: 20px;
+  }
+
+  .introducao img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 250px;
   }
 
   .introducao h1 {
     font-size: 2rem;
   }
 
-  .introducao h1::before {
-    width: 40px;
-    height: 6px;
-    left: 0;
+  .introducao p {
+    font-size: 1.1rem;
   }
 }
 
-@media (max-width: 400px) {
-  .introducao {
-    grid-template-columns: 1fr;
-  }
-
-  .introducao img {
-    display: none;
-  }
-}
+/* ===== TEXTO INICIAL ===== */
 .texto-inicial {
   max-width: 1200px;
   margin: 0 auto;
