@@ -1,18 +1,62 @@
-/* === IMAGEM DO HEADER === */
+/* ===== HEADER ===== */
+.header {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* ===== IMAGEM DO HEADER ===== */
 .header-foto {
   width: 180px;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #0864ee;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header-foto:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(8, 100, 238, 0.4);
 }
 
-/* === VERSÃO MOBILE === */
+/* ===== MENU ===== */
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ===== BOTÕES DO MENU ===== */
+.btn-menu {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  background: #0864ee;
+  border: 2px solid #0864ee;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-menu:hover {
+  background: #ffffff;
+  color: #0864ee;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(8, 100, 238, 0.3);
+}
+
+/* ===== VERSÃO MOBILE ===== */
 @media (max-width: 800px) {
   .header {
     flex-direction: column;
@@ -30,12 +74,19 @@
   .header-menu {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
-  .header-menu a {
-    background: #f7f7f7;
-    border-radius: 4px;
-    width: 100%;
+  .btn-menu {
+    width: 80%;
     text-align: center;
+    background: #0864ee;
+    color: #fff;
+    border-radius: 6px;
+  }
+
+  .btn-menu:hover {
+    background: #ffffff;
+    color: #0864ee;
   }
 }
