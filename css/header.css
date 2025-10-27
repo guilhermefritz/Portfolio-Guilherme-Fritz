@@ -10,19 +10,7 @@
 }
 
 /* ===== IMAGEM DO HEADER ===== */
-.header-foto {
-  width: 180px;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #0864ee;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.header-foto:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(8, 100, 238, 0.4);
-}
 
 /* ===== MENU ===== */
 .header-menu {
