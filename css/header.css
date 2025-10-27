@@ -30,19 +30,20 @@
   font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
-  color: #ffffff;
-  background: #ffffff;
+  color: #ffffff;            /* ← texto branco */
+  background: #0864ee;       /* ← fundo azul */
   border: 2px solid #0864ee;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .btn-menu:hover {
-  background: #ffffff;
-  color: #0864ee;
+  background: #ffffff;       /* ← fundo branco no hover */
+  color: #0864ee;            /* ← texto azul no hover */
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(8, 100, 238, 0.3);
 }
+
 
 /* ===== VERSÃO MOBILE ===== */
 @media (max-width: 800px) {
