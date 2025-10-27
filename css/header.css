@@ -39,7 +39,7 @@
 
 .btn-menu:hover {
   background: #ffffff;       /* ← fundo branco no hover */
-  color: #0864ee;            /* ← texto azul no hover */
+  color: #ffffff;            /* ← texto azul no hover */
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(8, 100, 238, 0.3);
 }
