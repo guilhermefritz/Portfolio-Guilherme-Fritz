@@ -10,7 +10,18 @@
 }
 
 /* ===== IMAGEM DO HEADER ===== */
+.header-foto {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0864ee;
+  transition: transform 0.3s ease;
+}
 
+.header-foto:hover {
+  transform: scale(1.05);
+}
 
 /* ===== MENU ===== */
 .header-menu {
@@ -30,36 +41,28 @@
   font-size: 1.125rem;
   font-weight: 500;
   text-decoration: none;
-  color: #ffffff;            /* ← texto branco sempre */
-  background: #0864ee;       /* ← fundo azul */
+  color: #ffffff;          /* texto branco */
+  background: #0864ee;     /* fundo azul */
   border: 2px solid #0864ee;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .btn-menu:hover {
-  background: #0643a8;       /* azul mais escuro no hover */
-  color: #ffffff;            /* texto branco no hover também */
+  background: #0643a8;     /* azul mais escuro */
+  color: #ffffff;          /* texto branco no hover */
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(8, 100, 238, 0.3);
 }
 
 /* ===== VERSÃO MOBILE ===== */
 @media (max-width: 800px) {
-  .btn-menu {
-    width: 80%;
-    text-align: center;
-    background: #0864ee;     /* azul de fundo no mobile */
-    color: #ffffff;          /* texto branco */
-    border-radius: 6px;
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
   }
-
-  .btn-menu:hover {
-    background: #0643a8;     /* hover azul escuro */
-    color: #ffffff;          /* texto branco */
-  }
-}
-
 
   .header-foto {
     width: 140px;
@@ -76,13 +79,11 @@
   .btn-menu {
     width: 80%;
     text-align: center;
-    background: #0864ee;
-    color: #fff;
     border-radius: 6px;
   }
 
   .btn-menu:hover {
-    background: #ffffff;
-    color: #0864ee;
+    background: #0643a8;   /* hover azul escuro no mobile */
+    color: #ffffff;
   }
 }
